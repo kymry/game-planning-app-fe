@@ -1,7 +1,12 @@
 import Scheduler from './Scheduler';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
-  return <Scheduler />;
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Scheduler />} />
+    </Routes>
+  );
 }
 
 export default App;
